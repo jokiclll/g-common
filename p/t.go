@@ -1,7 +1,7 @@
 package p
 
 const (
-	P_GameEnter_Jackaroo = iota + 1
+	P_GameEnter_Jackaroo int32 = iota + 1
 	P_GameWin_Jackaroo
 	P_GameEnter_Baloot
 	P_GameWin_Baloot
@@ -32,7 +32,7 @@ const (
 )
 
 var (
-	G2P_Enter = map[int]int{
+	G2P_Enter = map[int32]int32{
 		G_Jackaroo:     P_GameEnter_Jackaroo,
 		G_Baloot:       P_GameEnter_Baloot,
 		G_Domino:       P_GameEnter_Domino,
@@ -42,7 +42,7 @@ var (
 		G_Carrom:       P_GameEnter_Carrom,
 	}
 
-	G2P_Win = map[int]int{
+	G2P_Win = map[int32]int32{
 		G_Jackaroo:     P_GameWin_Jackaroo,
 		G_Baloot:       P_GameWin_Baloot,
 		G_Domino:       P_GameWin_Domino,
